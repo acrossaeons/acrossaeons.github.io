@@ -144,7 +144,9 @@ h3.header {
     justify-items: center;
     flex-wrap: wrap;
 }
-
+a, a:visited {
+    color: inherit;
+}
 @media screen and (max-width: 600px) {
     h1.header {
         font-size: 1.5em;
