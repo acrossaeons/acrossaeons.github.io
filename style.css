@@ -1,0 +1,164 @@
+:root {
+    font-family: "Source Serif Pro", serif;
+    --main-back-color: #521707;
+    --secondary-color: #aa2f0e;
+    background-color: var(--main-back-color);
+    color: white;
+    font-size: 1.0em;
+}
+
+.container {
+    padding: 0 1rem;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.header {
+    font-family: "Forum", serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+h1.header {
+    font-size: 2.5em;
+    margin: 0.25rem 0;
+}
+h2.header {
+    font-size: 1.75em;
+    margin: 0.2rem 0;
+}
+h3.header {
+    font-size: 1.25em;
+}
+
+.separator {
+    border-top: solid 1px white ;
+    height: 1px;
+    width: auto; 
+    margin:0 auto;
+    max-width: 480px;
+}
+
+.logo {
+    color: white;
+    display: inline;
+    width: 2em;
+    margin-right: 0.5em;
+}
+
+
+
+.country-card {
+    border: var(--secondary-color) 4px solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 1em auto;
+    font-family: "Forum";
+    text-transform: uppercase;
+    box-shadow: 0px 0px 20px 2px #140909;
+}
+
+.country-card > .country {
+    padding: 1em;
+    padding-left: 2em;
+    font-weight: bold;
+    font-size: 1.15em;
+}
+
+
+.country-card > .country.italy {
+    background-color: #1b6408;
+}
+.country-card > .country.greece {
+    background-color: #076581;
+}
+.country-card > .country.turkey {
+    background-color: #6d1414;
+}
+.country-card > .country:hover {
+    filter: brightness(125%);
+}
+
+.plan-card {
+    border: var(--secondary-color) 3px solid;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0.5em;
+    box-shadow: 0px 0px 4px 1px #332424;
+    padding: 1.25em;
+
+    flex-grow: 1;
+}
+.plan-card.premium {
+    border-color: #cfa828;
+    box-shadow: 0px 0px 12px 1px #d3b860;
+}
+
+.plan-card > .title {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: "Forum";
+    font-weight: bold;
+}
+
+.plan-card.premium > .buy {
+    display: flex;
+    background-color: #ce9e00;
+    border: #cfa828 1px solid;
+    box-shadow: 0px 0px 7px 2px #d3b860;
+}
+.plan-card > .buy {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25em 1em;
+    background-color: #b14527;
+    border: #5c2a1d 1px solid;
+    border-radius: 2px;
+    font-family: "Forum";
+    font-size: 1.4em;
+    color: white;
+}
+.plan-card > .buy > .price {
+    font-weight: bold;
+}
+
+.plan-card > .buy:hover {
+    filter: brightness(115%);
+}
+
+.plan-card > .buy:active {
+    filter: brightness(90%);
+}
+.plan-card > .desc {
+    line-height: 150%;
+}
+.plan-container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+    h1.header {
+        font-size: 1.5em;
+        margin: 0.25rem 0;
+    }
+    h2.header {
+        font-size: 1.3em;
+        margin: 0.2rem 0;
+    }
+    h3.header {
+        font-size: 1.1em;
+    }
+
+    .plan-card > .buy {
+        font-size: 1.3em;
+    }
+}

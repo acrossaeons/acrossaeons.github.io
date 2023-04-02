@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Source+Serif+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Across Aeons</title>
-</head>
-<body>
-    <h1>Hello!</h1>
-</body>
+  </head>
+  <body class="container">
+    <div>
+      <h1 class="header"><img src="AALogo2.svg" class="logo" />ACROSS AEONS</h1>
+      <div class="separator"></div>
+      <h2 class="header">A TRAVEL AGENCY</h2>
+    </div>
+    <p>
+      Welcome to Across Aeons! We're offering historically immersive trips all around the world, making you feel
+      both in 2023 A.C. and 300 B.C. Contemporary and antiquity unite to make a bizarre yet mesmerizing experience
+      you'll never forget.
+    </p>
+    <h2 class="header">TRIP: MEDITERRANEAN ROOTS</h2>
+    <h3 class="header">Three destinations, twenty discoveries!</h3>
+    <div class="country-card">
+      <div class="country italy">NAPLES, ITALY — 3 days</div>
+      <div class="country greece">ATHENES, GREECE — 2 days</div>
+      <div class="country turkey">ISTANBUL, TURKEY — 3 days</div>
+    </div>
+    <h3 class="header">Want to order? Choose your plan!</h3>
+    <div class="plan-container">
+      <div class="plan-card eco">
+        <div class="title">ECO</div>
+        <ul class="desc">
+          <li>All historical activities</li>
+          <li>Local food & 1 dinner per country</li>
+          <li>Hostel (room shared with others)</li>
+          <li>Flights, public transport and walking</li>
+          <li>Grand Finale of €50</li>
+        </ul>
+        <button class="buy"><span>Reserve now!</span> <span class="price">1100€</span></button>
+      </div>
+      <div class="plan-card premium">
+        <div class="title">PREMIUM</div>
+        <ul class="desc">
+          <li>Everything in Eco plan</li>
+          <li>One dinner everyday in restaurants</li>
+          <li>Individual hotel room (3 stars)</li>
+          <li>Taxi/Rental car (for long distances)</li>
+          <li>Grand Finale of €100</li>
+        </ul>
+        <button class="buy"><span>Reserve now!</span> <span class="price">1500€</span></button>
+      </div>
+    </div>
+    <script>
+      const buttons = document.querySelectorAll(".buy");
+      buttons.forEach((b) => {
+        b.addEventListener("click", (d, ev) => {
+          location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        });
+      });
+    </script>
+  </body>
 </html>
