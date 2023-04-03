@@ -45,10 +45,9 @@ h3.header {
     color: white;
     display: inline;
     width: 2em;
+    margin: 0.25em;
     margin-right: 0.5em;
 }
-
-
 
 .country-card {
     border: var(--secondary-color) 4px solid;
